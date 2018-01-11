@@ -64,18 +64,10 @@
 //#define USE_BME
 //#define USE_DHT
 
-// Atmega32u4
 #if defined(__AVR_ATmega32U4__)
   #define RFM69_RESET_PIN 18
   #define INT_PIN 7
   #define INT_NUM 4
-
-#elif defined(__AVR_ATmega328P__)
-  // Atmega328P
-  #define RFM69_RESET_PIN 14 
-  #define INT_PIN 7
-  #define INT_NUM 23 //does not work!!!
-#else
   #error "need pin definitions"
 #endif
 
